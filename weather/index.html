@@ -1,9 +1,52 @@
+<!--  Weather Part 1 -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd$
+<html>
+<head>
+<style>
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+</style>
+</head>
+
+<body>
+
 <!-- Host and Date/Time -->
-Host: raspi0BME at 192.168.1.121  on DKENet<br>Date/Time: Friday, 2021Jan01 11:40 pm CST <br><br>
+Host: raspi0BME at 192.168.1.121  on DKENet<br>Date/Time: Friday, 2021Jan01 11:56 pm CST <br><br>
+<!-- Weather Part 2 -->
+
+<table>
+  <tr>
+    <th rowspan="2"></th>
+    <th rowspan="2"><p style="font-size:3em">Current</p></th>
+    <th colspan="2"><p style="font-size:2em">Last 24 hrs</p></th>
+  </tr>
+  <tr>
+    <th style="text-align:center"><p style="font-size:2em">Min</p></th>
+    <th style="text-align:center"><p style="font-size:2em">Max</p></th>
+  </tr>
+
 <!-- tph_stats.html -->
 <tr>
   <td></td>
-  <td style="text-align:center"><p style="font-size:1.5em">2021Jan01 23:36</p></td>
+  <td style="text-align:center"><p style="font-size:1.5em">2021Jan01 23:56</p></td>
   <td></td>
   <td></td>
 </tr>
@@ -21,10 +64,29 @@ Host: raspi0BME at 192.168.1.121  on DKENet<br>Date/Time: Friday, 2021Jan01 11:4
 </tr>
 <tr>
   <td><span style="font-size:3em">Pressure</span><span style="font-size:1em"><br>(Station Altitude: 256.6 m)</span></td>
-  <td style="text-align:center"><span style="font-size:3em">1019 mBar</span><span style="font-size:1em"><br>(30.11"Hg)</span></td>
+  <td style="text-align:center"><span style="font-size:3em">1019 mBar</span><span style="font-size:1em"><br>(30.10"Hg)</span></td>
   <td style="text-align:center"><span style="font-size:2em">1018 mBar</span></td>
   <td style="text-align:center"><span style="font-size:2em">1025 mBar</span></td>
 </tr>
 <tr>
-  <td colspan="4" style="text-align:center;background-color:#ffff00"><p style="font-size:1.5em">Normal pressure is associated with steady weather.<br>Pressure is Rising : Present conditions will continue</td>
+  <td colspan="4" style="text-align:center;background-color:#ffff00"><p style="font-size:1.5em">Normal pressure is associated with steady weather.<br>Pressure is Holding steady : Present conditions will continue</td>
 </tr>
+<!-- Weather Part 3 -->
+
+</table>
+
+<p style="text-align:center; font-size:3em"> 24 hour Temperature</p>
+        <img src="images/24hrtemperature.png" alt="24hrTemp" />
+<br>
+
+<p style="text-align:center; font-size:3em"> 24 hour Pressure</p>
+        <img src="images/24hrpressure.png" alt="24hrPressure" />
+<br>
+
+<p style="text-align:center; font-size:3em"> 24 hour Humidity</p>
+        <img src="images/24hrhumidity.png" alt="24hrHumidity" />
+<br>
+
+</body>
+</html>
+
